@@ -1,13 +1,6 @@
-//CORREGIR ALERT, ME EQUIVOQUÉ DE COMPONENTE =p
-
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-const SocialButton = ({icon}) => {
+const Alert = ({ color, msg }) => {
 	return (
-		<figure>
-			<FontAwesomeIcon icon={icon} size="2x" />
-		</figure>
-)
+		<div className={`alert alert-${color} my-2`}>{msg}</div>
+	)
 }
-export default SocialButton
+export default Alert
