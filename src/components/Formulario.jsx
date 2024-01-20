@@ -13,7 +13,7 @@ const Formulario = ({ setAlert }) => {
         if (password !== confPassword) {
             setAlert({
                 error: true,
-                msg: "Las contraseñas no coinciden !",
+                msg: "¡Las contraseñas no coinciden!",
                 color: "warning",
             })
             return
@@ -21,7 +21,7 @@ const Formulario = ({ setAlert }) => {
         if (name === '' || email === '' || password === '' || confPassword === '') {
             setAlert({
                 error: true,
-                msg: "Completa todos los campos !",
+                msg: "¡Completa todos los campos!",
                 color: "danger",
             })
             return
@@ -29,7 +29,7 @@ const Formulario = ({ setAlert }) => {
         if (!validateMail.test(email)) {
             setAlert({
                 error: true,
-                msg: "El email debe tener un formato válido !",
+                msg: "¡El email debe tener un formato válido!",
                 color: "danger",
             })
             return

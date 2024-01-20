@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Registro from "./components/Registro"
 
+
 const App = () => {
   const [message, setMessage] = useState({
     error: false,
